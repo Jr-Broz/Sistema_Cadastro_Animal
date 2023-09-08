@@ -4,14 +4,15 @@ using System.Diagnostics;
 using System.Collections.Generic;
 using Tp3;
 using System.Linq.Expressions;
+
 public class Incluir{
+
 public string peso; 
 public String checarCondicao;
 public int idade;
  public DateTime dia;
 public String Nome;
 public List<String> minhaLista = new List <String>();
-
  String respost; 
  int i;
  string kg = "kg";
@@ -48,11 +49,9 @@ switch(respost){
     Console.Clear();
     break;
 }
+  }
+      while(respost != "3");
 }
-        while(respost != "3");
-}
-
-
 
 //Para começar de fato o cadastro para o usuario colocar os dados.
 
@@ -74,23 +73,15 @@ public void ComecarCadastro(){
 
         checarCondicao = "Saudavel";
     }
-    else{
+    else {
         Guid gerarID_Unico = Guid.NewGuid();
        
-        checarCondicao = $"Necessário marcar uma consulta com o veterinário, apresente, no dia da consulta, este ID a recepcionista: {gerarID_Unico}";
-   
+        checarCondicao = $"Necessário marcar uma consulta com o veterinário, apresente, no dia da consulta, este ID a recepcionista: {gerarID_Unico}"; 
     }
 
     Console.WriteLine("Escreva o peso do animal");
     this.peso = Console.ReadLine();
-/*
-    Console.WriteLine("------------------------------------------");
-    Console.WriteLine("Nome: " + this.Nome);
-    Console.WriteLine("Peso: " + this.peso);
-    Console.WriteLine("Idade: " + this.idade);
-    Console.WriteLine("Data de Nascimento:  " + this.dia);
-    Console.WriteLine("Saude:  " + this.checarCondicao);
-*/
+
 }
 
 public void Acessar_Dados_Pacientes_Lista(){
@@ -150,4 +141,3 @@ else if(element == checarCondicao){
  
  }
 }
-
