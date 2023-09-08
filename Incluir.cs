@@ -10,15 +10,14 @@ public class Incluir{
 public string peso; 
 public String checarCondicao;
 public int idade;
- public DateTime dia;
+public DateTime dia;
 public String Nome;
 public List<String> minhaLista = new List <String>();
- String respost; 
- int i;
- string kg = "kg";
+String respost; 
+int i;
+string kg = "kg";
 
 public void exibirInput(){
-
 
 do{ 
 
@@ -139,5 +138,5 @@ else if(element == checarCondicao){
    arquivar.Close();
    f.Close();
  
- }
+  }
 }
